@@ -28,12 +28,17 @@ class FinanceController extends Controller
 
     public function addCredit()
     {
-        return view('pages.finance.add_credit');
+        return view('pages.finance.credit_add');
     }
 
     public function creditList()
     {
         return view('pages.finance.credit_list');
+    }
+
+    public function creditDetails($id)
+    {
+        return view('pages.finance.credit_details');
     }
 
     public function transferList()

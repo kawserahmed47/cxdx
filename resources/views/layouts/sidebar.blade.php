@@ -230,9 +230,65 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="pages/layout/top-nav.html" class="nav-link">
+                            <a href="{{route('appSettings')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Top Navigation</p>
+                                <p>App Settings</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="{{route('feesSettings')}}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Fees Settings</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="{{route('commissionSetup')}}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Commission Setup</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="{{route('emailSmsSettings')}}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Email and SMS Setting</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="{{route('emailGateway')}}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Email Gateway</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="{{route('smsGateway')}}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>SMS Gateway</p>
+                            </a>
+                        </li>
+
+                        {{-- <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>SMS/Email Template</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>External API</p>
+                            </a>
+                        </li> --}}
+
+                        <li class="nav-item">
+                            <a href="{{route('languageSettings')}}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Language Setting</p>
                             </a>
                         </li>
                     </ul>
