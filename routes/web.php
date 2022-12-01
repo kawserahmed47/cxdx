@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\ExchangeController;
 use App\Http\Controllers\FinanceController;
 use App\Http\Controllers\PackageController;
 use App\Http\Controllers\RoleController;
@@ -45,3 +46,12 @@ Route::get('email-sms-settings', [SettingsController::class, 'emailSmsSettings']
 Route::get('email-gateway', [SettingsController::class, 'emailGateway'])->name('emailGateway');
 Route::get('sms-gateway', [SettingsController::class, 'smsGateway'])->name('smsGateway');
 Route::get('language-settings', [SettingsController::class, 'languageSettings'])->name('languageSettings');
+
+
+// Exchange Settings
+Route::get('exchange_list', [ExchangeController::class, 'exchangeList'])->name('exchangeList');
+Route::get('crypto_currency', [ExchangeController::class, 'cryptoCurrency'])->name('cryptoCurrency');
+Route::get('local-currency', [ExchangeController::class, 'localCurrency'])->name('localCurrency');
+Route::get('exchange-wallet', [ExchangeController::class, 'exchangeWallet'])->name('exchangeWallet');
+Route::get('exchange-wallet-info', [ExchangeController::class, 'exchangeWalletInfo'])->name('exchangeWalletInfo');
+

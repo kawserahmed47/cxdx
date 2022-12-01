@@ -294,6 +294,46 @@
                     </ul>
                 </li>
 
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-exchange-alt"></i>
+                        <p>
+                            Exchange Setting
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{route('exchangeList')}}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Exchange</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="{{route('cryptoCurrency')}}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Crypto Currency</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="{{route('localCurrency')}}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Local Currency</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="{{route('exchangeWallet')}}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Exchange Wallet</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
                 <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-users"></i>
@@ -330,23 +370,7 @@
                     </ul>
                 </li>
 
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-users"></i>
-                        <p>
-                            Exchange Setting
-                            <i class="fas fa-angle-left right"></i>
-                        </p>
-                    </a>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="pages/layout/top-nav.html" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Top Navigation</p>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
+               
 
                 <li class="nav-item">
                     <a href="#" class="nav-link">
