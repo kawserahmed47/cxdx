@@ -334,6 +334,60 @@
                     </ul>
                 </li>
 
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-cogs"></i>
+                        <p>
+                            Payment Gateway
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{route('payment-gateway.gourl')}}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Gourl</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="{{route('payment-gateway.payeer')}}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Payeer</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="{{route('payment-gateway.paypal')}}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Paypal</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="{{route('payment-gateway.paystack')}}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Paystack</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="{{route('payment-gateway.phone')}}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Phone</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="{{route('payment-gateway.stripe')}}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Stripe</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
                 <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-users"></i>
@@ -552,23 +606,7 @@
                     </ul>
                 </li>
 
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-users"></i>
-                        <p>
-                            Payment Gateway
-                            <i class="fas fa-angle-left right"></i>
-                        </p>
-                    </a>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="pages/layout/top-nav.html" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Top Navigation</p>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
+               
 
                 <li class="nav-item">
                     <a href="#" class="nav-link">

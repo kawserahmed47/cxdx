@@ -5,6 +5,7 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\ExchangeController;
 use App\Http\Controllers\FinanceController;
 use App\Http\Controllers\PackageController;
+use App\Http\Controllers\PaymentGatewayController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\SettingsController;
 use App\Http\Controllers\SubscriberController;
@@ -55,3 +56,12 @@ Route::get('local-currency', [ExchangeController::class, 'localCurrency'])->name
 Route::get('exchange-wallet', [ExchangeController::class, 'exchangeWallet'])->name('exchangeWallet');
 Route::get('exchange-wallet-info', [ExchangeController::class, 'exchangeWalletInfo'])->name('exchangeWalletInfo');
 
+// Payment Gateway
+Route::group(['prefix'=>'payment-gateway', 'as' =>'payment-gateway.'], function(){
+    Route::get('gourl', [PaymentGatewayController::class, 'gourl'])->name('gourl');
+    Route::get('payeer', [PaymentGatewayController::class, 'payeer'])->name('payeer');
+    Route::get('paypal', [PaymentGatewayController::class, 'paypal'])->name('paypal');
+    Route::get('paystack', [PaymentGatewayController::class, 'paystack'])->name('paystack');
+    Route::get('phone', [PaymentGatewayController::class, 'phone'])->name('phone');
+    Route::get('stripe', [PaymentGatewayController::class, 'stripe'])->name('stripe');
+});
