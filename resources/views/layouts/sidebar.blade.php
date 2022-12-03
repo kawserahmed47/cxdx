@@ -438,7 +438,7 @@
 
                 <li class="nav-item">
                     <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-users"></i>
+                        <i class="nav-icon fas fa-tv"></i>
                         <p>
                             CMS
                             <i class="fas fa-angle-left right"></i>
@@ -448,14 +448,91 @@
                         <li class="nav-item">
                             <a href="pages/layout/top-nav.html" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Top Navigation</p>
+                                <p>Content</p>
                             </a>
                         </li>
+
+                        <li class="nav-item">
+                            <a href="pages/layout/top-nav.html" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Contact</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="pages/layout/top-nav.html" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Client</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="pages/layout/top-nav.html" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Services</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="pages/layout/top-nav.html" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Testimonial</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="pages/layout/top-nav.html" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>F.A.Q</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="pages/layout/top-nav.html" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>News</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="pages/layout/top-nav.html" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Category</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="pages/layout/top-nav.html" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Slider</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="pages/layout/top-nav.html" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Social Link</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="pages/layout/top-nav.html" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Advertisement</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="pages/layout/top-nav.html" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Team List>
+                            </a>
+                        </li>
+
                     </ul>
                 </li>
 
-               
-
+                {{-- 
                 <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-users"></i>
@@ -637,7 +714,7 @@
                 </li>
 
                
-
+            --}}
               
 
                 <li class="nav-item menu-open">

@@ -1,16 +1,28 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AdvertisementController;
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ClientController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\ContentController;
 use App\Http\Controllers\ExchangeController;
+use App\Http\Controllers\FaqController;
 use App\Http\Controllers\FinanceController;
+use App\Http\Controllers\NewsController;
 use App\Http\Controllers\PackageController;
 use App\Http\Controllers\PaymentGatewayController;
 use App\Http\Controllers\QuickExchangeController;
 use App\Http\Controllers\QuickExchangerController;
 use App\Http\Controllers\RoleController;
+use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\SettingsController;
+use App\Http\Controllers\SliderController;
+use App\Http\Controllers\SocialLinkController;
 use App\Http\Controllers\SubscriberController;
+use App\Http\Controllers\TeamController;
+use App\Http\Controllers\TestimonialController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -79,4 +91,21 @@ Route::group(['prefix'=>'quick-exchange', 'as' =>'quick-exchange.'], function(){
     Route::get('request-edit/{id}', [QuickExchangeController::class, 'exchangeRequestEdit'])->name('exchangeRequestEdit');
     Route::get('order', [QuickExchangeController::class, 'exchangeOrder'])->name('exchangeOrder');
     Route::get('documentation', [QuickExchangeController::class, 'documentation'])->name('documentation');
+});
+
+// CMS
+
+Route::group(['prefix' => 'cms', 'as' => 'cms.'], function(){
+    Route::resource(ContentController::class);
+    Route::resource(ContactController::class);
+    Route::resource(ClientController::class);
+    Route::resource(ServiceController::class);
+    Route::resource(TestimonialController::class);
+    Route::resource(FaqController::class);
+    Route::resource(NewsController::class);
+    Route::resource(CategoryController::class);
+    Route::resource(SliderController::class);
+    Route::resource(SocialLinkController::class);
+    Route::resource(AdvertisementController::class);
+    Route::resource(TeamController::class);
 });
