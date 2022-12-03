@@ -6,6 +6,8 @@ use App\Http\Controllers\ExchangeController;
 use App\Http\Controllers\FinanceController;
 use App\Http\Controllers\PackageController;
 use App\Http\Controllers\PaymentGatewayController;
+use App\Http\Controllers\QuickExchangeController;
+use App\Http\Controllers\QuickExchangerController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\SettingsController;
 use App\Http\Controllers\SubscriberController;
@@ -64,4 +66,17 @@ Route::group(['prefix'=>'payment-gateway', 'as' =>'payment-gateway.'], function(
     Route::get('paystack', [PaymentGatewayController::class, 'paystack'])->name('paystack');
     Route::get('phone', [PaymentGatewayController::class, 'phone'])->name('phone');
     Route::get('stripe', [PaymentGatewayController::class, 'stripe'])->name('stripe');
+});
+
+// Quick Exchanger
+Route::group(['prefix'=>'quick-exchange', 'as' =>'quick-exchange.'], function(){
+    Route::get('coin', [QuickExchangeController::class, 'exchangeCoin'])->name('exchangeCoin');
+    Route::get('coin-form', [QuickExchangeController::class, 'exchangeCoinForm'])->name('exchangeCoinForm');
+    Route::get('edit-coin-form/{id}', [QuickExchangeController::class, 'exchangeCoinFormEdit'])->name('exchangeCoinFormEdit');
+
+    Route::get('fiat-currency', [QuickExchangeController::class, 'fiatCurrency'])->name('fiatCurrency');
+    Route::get('request', [QuickExchangeController::class, 'exchangeRequest'])->name('exchangeRequest');
+    Route::get('request-edit/{id}', [QuickExchangeController::class, 'exchangeRequestEdit'])->name('exchangeRequestEdit');
+    Route::get('order', [QuickExchangeController::class, 'exchangeOrder'])->name('exchangeOrder');
+    Route::get('documentation', [QuickExchangeController::class, 'documentation'])->name('documentation');
 });

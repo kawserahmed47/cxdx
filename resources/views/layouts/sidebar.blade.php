@@ -390,19 +390,49 @@
 
                 <li class="nav-item">
                     <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-users"></i>
+                        <i class="nav-icon fab fa-stack-exchange"></i>
                         <p>
-                            CMS
+                            Quick Exchanger
                             <i class="fas fa-angle-left right"></i>
                         </p>
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="pages/layout/top-nav.html" class="nav-link">
+                            <a href="{{route('quick-exchange.exchangeCoin')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Top Navigation</p>
+                                <p>Quick Exchange Coin</p>
                             </a>
                         </li>
+
+                        <li class="nav-item">
+                            <a href="{{route('quick-exchange.fiatCurrency')}}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Fiat Currency</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="{{route('quick-exchange.exchangeRequest')}}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Quick Exchange Request</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="{{route('quick-exchange.exchangeOrder')}}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Quick Exchange Order</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="{{route('quick-exchange.documentation')}}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Documentation</p>
+                            </a>
+                        </li>
+
+
                     </ul>
                 </li>
 
@@ -410,7 +440,7 @@
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-users"></i>
                         <p>
-                            Addons
+                            CMS
                             <i class="fas fa-angle-left right"></i>
                         </p>
                     </a>
@@ -608,22 +638,13 @@
 
                
 
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-users"></i>
-                        <p>
-                            Quick Exchanger
-                            <i class="fas fa-angle-left right"></i>
-                        </p>
+              
+
+                <li class="nav-item menu-open">
+                    <a  href="{{url('/')}}" class="nav-link bg-success">
+                        <i class="nav-icon fa fa-question-circle"></i>
+                        <p>Support</p>
                     </a>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="pages/layout/top-nav.html" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Top Navigation</p>
-                            </a>
-                        </li>
-                    </ul>
                 </li>
 
 
