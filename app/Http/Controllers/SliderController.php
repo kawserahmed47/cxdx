@@ -14,7 +14,7 @@ class SliderController extends Controller
      */
     public function index()
     {
-        //
+        return view('pages.cms.slider.index');
     }
 
     /**
@@ -24,7 +24,7 @@ class SliderController extends Controller
      */
     public function create()
     {
-        //
+        return view('pages.cms.slider.create');
     }
 
     /**
@@ -44,9 +44,9 @@ class SliderController extends Controller
      * @param  \App\Models\Slider  $slider
      * @return \Illuminate\Http\Response
      */
-    public function show(Slider $slider)
+    public function show($id)
     {
-        //
+        return view('pages.cms.slider.show');
     }
 
     /**
@@ -55,9 +55,9 @@ class SliderController extends Controller
      * @param  \App\Models\Slider  $slider
      * @return \Illuminate\Http\Response
      */
-    public function edit(Slider $slider)
+    public function edit($id)
     {
-        //
+        return view('pages.cms.slider.edit');
     }
 
     /**
@@ -67,7 +67,7 @@ class SliderController extends Controller
      * @param  \App\Models\Slider  $slider
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Slider $slider)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -78,7 +78,7 @@ class SliderController extends Controller
      * @param  \App\Models\Slider  $slider
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Slider $slider)
+    public function destroy($id)
     {
         //
     }

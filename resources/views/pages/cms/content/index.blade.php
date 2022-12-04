@@ -25,7 +25,144 @@
                 <div class="row">
                     <!-- left column -->
                     <div class="col-md-12">
-                      
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                    <h6 class="fs-17 font-weight-600 mb-0">Page Content</h6>
+                                    </div>
+                                    <div class="text-right">
+                                    <div class="actions">
+                                    <a class="btn btn-success w-md m-b-5 pull-right" href="{{route('cms.content.create')}}"><i class="fa fa-plus" aria-hidden="true"></i> Content</a>
+                                    </div>
+                                    </div>
+                                    </div>
+                            </div>
+                            <!-- /.card-header -->
+                            <div class="card-body">
+                              <table id="example1" class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>#SL</th>
+                                        <th>Heading English</th>
+                                        <th>Category</th>
+                                        <th>Position Serial</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                <tr>
+                                  <td>1</td>
+                                  <td>Buy or Sell Orders</td>
+                                  <td>Home</td>
+                                  <td>6</td>
+                                  <td>
+                                    <a href="#" class="btn btn-primary" title="Show"><i class="fa fa-eye"></i></a>
+                                    <a href="{{route('cms.content.edit', 1)}}" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></a>
+                                    <a href="#" class="btn btn-danger" title="Delete"><i class="fa fa-trash"></i></a>
+                                  </td>
+                                </tr>
+
+                                <tr>
+                                    <td>1</td>
+                                    <td>Buy or Sell Orders</td>
+                                    <td>Home</td>
+                                    <td>6</td>
+                                    <td>
+                                      <a href="#" class="btn btn-primary" title="Show"><i class="fa fa-eye"></i></a>
+                                      <a href="{{route('cms.content.edit', 1)}}" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></a>
+                                      <a href="#" class="btn btn-danger" title="Delete"><i class="fa fa-trash"></i></a>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>1</td>
+                                    <td>Buy or Sell Orders</td>
+                                    <td>Home</td>
+                                    <td>6</td>
+                                    <td>
+                                      <a href="#" class="btn btn-primary" title="Show"><i class="fa fa-eye"></i></a>
+                                      <a href="{{route('cms.content.edit', 1)}}" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></a>
+                                      <a href="#" class="btn btn-danger" title="Delete"><i class="fa fa-trash"></i></a>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>1</td>
+                                    <td>Buy or Sell Orders</td>
+                                    <td>Home</td>
+                                    <td>6</td>
+                                    <td>
+                                      <a href="#" class="btn btn-primary" title="Show"><i class="fa fa-eye"></i></a>
+                                      <a href="{{route('cms.content.edit', 1)}}" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></a>
+                                      <a href="#" class="btn btn-danger" title="Delete"><i class="fa fa-trash"></i></a>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>1</td>
+                                    <td>Buy or Sell Orders</td>
+                                    <td>Home</td>
+                                    <td>6</td>
+                                    <td>
+                                      <a href="#" class="btn btn-primary" title="Show"><i class="fa fa-eye"></i></a>
+                                      <a href="{{route('cms.content.edit', 1)}}" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></a>
+                                      <a href="#" class="btn btn-danger" title="Delete"><i class="fa fa-trash"></i></a>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>1</td>
+                                    <td>Buy or Sell Orders</td>
+                                    <td>Home</td>
+                                    <td>6</td>
+                                    <td>
+                                      <a href="#" class="btn btn-primary" title="Show"><i class="fa fa-eye"></i></a>
+                                      <a href="{{route('cms.content.edit', 1)}}" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></a>
+                                      <a href="#" class="btn btn-danger" title="Delete"><i class="fa fa-trash"></i></a>
+                                    </td>
+                                  </tr>
+
+
+                                  <tr>
+                                    <td>1</td>
+                                    <td>Buy or Sell Orders</td>
+                                    <td>Home</td>
+                                    <td>6</td>
+                                    <td>
+                                      <a href="#" class="btn btn-primary" title="Show"><i class="fa fa-eye"></i></a>
+                                      <a href="{{route('cms.content.edit', 1)}}" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></a>
+                                      <a href="#" class="btn btn-danger" title="Delete"><i class="fa fa-trash"></i></a>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>1</td>
+                                    <td>Buy or Sell Orders</td>
+                                    <td>Home</td>
+                                    <td>6</td>
+                                    <td>
+                                      <a href="#" class="btn btn-primary" title="Show"><i class="fa fa-eye"></i></a>
+                                      <a href="{{route('cms.content.edit', 1)}}" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></a>
+                                      <a href="#" class="btn btn-danger" title="Delete"><i class="fa fa-trash"></i></a>
+                                    </td>
+                                  </tr>
+                               
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th>#SL</th>
+                                        <th>Heading English</th>
+                                        <th>Category</th>
+                                        <th>Position Serial</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </tfoot>
+                              </table>
+                            </div>
+                            <!-- /.card-body -->
+                          </div>
                       <!-- /.card -->
                     </div>
                     <!--/.col (left) -->

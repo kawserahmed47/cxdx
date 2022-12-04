@@ -14,7 +14,7 @@ class AdvertisementController extends Controller
      */
     public function index()
     {
-        //
+        return view('pages.cms.advertisement.index');
     }
 
     /**
@@ -24,7 +24,7 @@ class AdvertisementController extends Controller
      */
     public function create()
     {
-        //
+        return view('pages.cms.advertisement.create');
     }
 
     /**
@@ -44,9 +44,9 @@ class AdvertisementController extends Controller
      * @param  \App\Models\Advertisement  $advertisement
      * @return \Illuminate\Http\Response
      */
-    public function show(Advertisement $advertisement)
+    public function show($id)
     {
-        //
+        return view('pages.cms.advertisement.show');
     }
 
     /**
@@ -55,9 +55,9 @@ class AdvertisementController extends Controller
      * @param  \App\Models\Advertisement  $advertisement
      * @return \Illuminate\Http\Response
      */
-    public function edit(Advertisement $advertisement)
+    public function edit($id)
     {
-        //
+        return view('pages.cms.advertisement.edit');
     }
 
     /**
@@ -67,7 +67,7 @@ class AdvertisementController extends Controller
      * @param  \App\Models\Advertisement  $advertisement
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Advertisement $advertisement)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -78,7 +78,7 @@ class AdvertisementController extends Controller
      * @param  \App\Models\Advertisement  $advertisement
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Advertisement $advertisement)
+    public function destroy($id)
     {
         //
     }

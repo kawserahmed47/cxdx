@@ -14,7 +14,7 @@ class ServiceController extends Controller
      */
     public function index()
     {
-        //
+        return view('pages.cms.service.index');
     }
 
     /**
@@ -24,7 +24,7 @@ class ServiceController extends Controller
      */
     public function create()
     {
-        //
+        return view('pages.cms.service.create');
     }
 
     /**
@@ -44,9 +44,9 @@ class ServiceController extends Controller
      * @param  \App\Models\Service  $service
      * @return \Illuminate\Http\Response
      */
-    public function show(Service $service)
+    public function show($id)
     {
-        //
+        return view('pages.cms.service.show');
     }
 
     /**
@@ -55,9 +55,9 @@ class ServiceController extends Controller
      * @param  \App\Models\Service  $service
      * @return \Illuminate\Http\Response
      */
-    public function edit(Service $service)
+    public function edit($id)
     {
-        //
+        return view('pages.cms.service.edit');
     }
 
     /**
@@ -67,7 +67,7 @@ class ServiceController extends Controller
      * @param  \App\Models\Service  $service
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Service $service)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -78,7 +78,7 @@ class ServiceController extends Controller
      * @param  \App\Models\Service  $service
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Service $service)
+    public function destroy($id)
     {
         //
     }

@@ -446,86 +446,86 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="pages/layout/top-nav.html" class="nav-link">
+                            <a href="{{route('cms.content.index')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Content</p>
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="pages/layout/top-nav.html" class="nav-link">
+                            <a href="{{route('cms.contact.create')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Contact</p>
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="pages/layout/top-nav.html" class="nav-link">
+                            <a href="{{route('cms.client.index')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Client</p>
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="pages/layout/top-nav.html" class="nav-link">
+                            <a href="{{route('cms.service.index')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Services</p>
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="pages/layout/top-nav.html" class="nav-link">
+                            <a href="{{route('cms.testimonial.index')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Testimonial</p>
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="pages/layout/top-nav.html" class="nav-link">
+                            <a href="{{route('cms.faq.index')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>F.A.Q</p>
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="pages/layout/top-nav.html" class="nav-link">
+                            <a href="{{route('cms.news.index')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>News</p>
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="pages/layout/top-nav.html" class="nav-link">
+                            <a href="{{route('cms.category.index')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Category</p>
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="pages/layout/top-nav.html" class="nav-link">
+                            <a href="{{route('cms.slider.index')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Slider</p>
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="pages/layout/top-nav.html" class="nav-link">
+                            <a href="{{route('cms.social-link.index')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Social Link</p>
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="pages/layout/top-nav.html" class="nav-link">
+                            <a href="{{route('cms.advertisement.index')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Advertisement</p>
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="pages/layout/top-nav.html" class="nav-link">
+                            <a href="{{route('cms.team.index')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Team List>
+                                <p>Team List </p>
                             </a>
                         </li>
 

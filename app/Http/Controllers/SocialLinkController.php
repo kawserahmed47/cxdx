@@ -14,7 +14,7 @@ class SocialLinkController extends Controller
      */
     public function index()
     {
-        //
+        return view('pages.cms.social.index');
     }
 
     /**
@@ -24,7 +24,7 @@ class SocialLinkController extends Controller
      */
     public function create()
     {
-        //
+        return view('pages.cms.social.create');
     }
 
     /**
@@ -44,9 +44,9 @@ class SocialLinkController extends Controller
      * @param  \App\Models\SocialLink  $socialLink
      * @return \Illuminate\Http\Response
      */
-    public function show(SocialLink $socialLink)
+    public function show($id)
     {
-        //
+        return view('pages.cms.social.show');
     }
 
     /**
@@ -55,9 +55,9 @@ class SocialLinkController extends Controller
      * @param  \App\Models\SocialLink  $socialLink
      * @return \Illuminate\Http\Response
      */
-    public function edit(SocialLink $socialLink)
+    public function edit($id)
     {
-        //
+        return view('pages.cms.social.edit');
     }
 
     /**
@@ -67,7 +67,7 @@ class SocialLinkController extends Controller
      * @param  \App\Models\SocialLink  $socialLink
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, SocialLink $socialLink)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -78,7 +78,7 @@ class SocialLinkController extends Controller
      * @param  \App\Models\SocialLink  $socialLink
      * @return \Illuminate\Http\Response
      */
-    public function destroy(SocialLink $socialLink)
+    public function destroy($id)
     {
         //
     }

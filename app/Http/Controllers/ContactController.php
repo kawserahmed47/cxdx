@@ -14,7 +14,7 @@ class ContactController extends Controller
      */
     public function index()
     {
-        //
+        return view('pages.cms.contact.index');
     }
 
     /**
@@ -24,7 +24,7 @@ class ContactController extends Controller
      */
     public function create()
     {
-        //
+        return view('pages.cms.contact.create');
     }
 
     /**
@@ -44,9 +44,9 @@ class ContactController extends Controller
      * @param  \App\Models\Contact  $contact
      * @return \Illuminate\Http\Response
      */
-    public function show(Contact $contact)
+    public function show($id)
     {
-        //
+        return view('pages.cms.contact.show');
     }
 
     /**
@@ -55,9 +55,9 @@ class ContactController extends Controller
      * @param  \App\Models\Contact  $contact
      * @return \Illuminate\Http\Response
      */
-    public function edit(Contact $contact)
+    public function edit($id)
     {
-        //
+        return view('pages.cms.contact.edit');
     }
 
     /**
@@ -67,7 +67,7 @@ class ContactController extends Controller
      * @param  \App\Models\Contact  $contact
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Contact $contact)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -78,7 +78,7 @@ class ContactController extends Controller
      * @param  \App\Models\Contact  $contact
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Contact $contact)
+    public function destroy($id)
     {
         //
     }

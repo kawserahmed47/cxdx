@@ -96,16 +96,16 @@ Route::group(['prefix'=>'quick-exchange', 'as' =>'quick-exchange.'], function(){
 // CMS
 
 Route::group(['prefix' => 'cms', 'as' => 'cms.'], function(){
-    Route::resource(ContentController::class);
-    Route::resource(ContactController::class);
-    Route::resource(ClientController::class);
-    Route::resource(ServiceController::class);
-    Route::resource(TestimonialController::class);
-    Route::resource(FaqController::class);
-    Route::resource(NewsController::class);
-    Route::resource(CategoryController::class);
-    Route::resource(SliderController::class);
-    Route::resource(SocialLinkController::class);
-    Route::resource(AdvertisementController::class);
-    Route::resource(TeamController::class);
+    Route::resource('content', ContentController::class);
+    Route::resource('contact', ContactController::class);
+    Route::resource('client',  ClientController::class);
+    Route::resource('service', ServiceController::class);
+    Route::resource('testimonial', TestimonialController::class);
+    Route::resource('faq', FaqController::class);
+    Route::resource('news', NewsController::class);
+    Route::resource('category', CategoryController::class);
+    Route::resource('slider', SliderController::class);
+    Route::resource('social-link',SocialLinkController::class);
+    Route::resource('advertisement', AdvertisementController::class);
+    Route::resource('team', TeamController::class);
 });

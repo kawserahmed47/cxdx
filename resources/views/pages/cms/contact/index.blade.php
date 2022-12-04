@@ -26,6 +26,7 @@
                     <!-- left column -->
                     <div class="col-md-12">
                       
+
                       <!-- /.card -->
                     </div>
                     <!--/.col (left) -->

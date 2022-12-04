@@ -14,7 +14,7 @@ class ClientController extends Controller
      */
     public function index()
     {
-        //
+        return view('pages.cms.client.index');
     }
 
     /**
@@ -24,7 +24,7 @@ class ClientController extends Controller
      */
     public function create()
     {
-        //
+        return view('pages.cms.client.create');
     }
 
     /**
@@ -44,9 +44,9 @@ class ClientController extends Controller
      * @param  \App\Models\Client  $client
      * @return \Illuminate\Http\Response
      */
-    public function show(Client $client)
+    public function show($id)
     {
-        //
+        return view('pages.cms.client.show');
     }
 
     /**
@@ -55,9 +55,9 @@ class ClientController extends Controller
      * @param  \App\Models\Client  $client
      * @return \Illuminate\Http\Response
      */
-    public function edit(Client $client)
+    public function edit($id)
     {
-        //
+        return view('pages.cms.client.edit');
     }
 
     /**
@@ -67,7 +67,7 @@ class ClientController extends Controller
      * @param  \App\Models\Client  $client
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Client $client)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -78,7 +78,7 @@ class ClientController extends Controller
      * @param  \App\Models\Client  $client
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Client $client)
+    public function destroy($id)
     {
         //
     }

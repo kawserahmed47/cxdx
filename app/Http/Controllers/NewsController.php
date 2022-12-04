@@ -14,7 +14,7 @@ class NewsController extends Controller
      */
     public function index()
     {
-        //
+        return view('pages.cms.news.index');
     }
 
     /**
@@ -24,7 +24,7 @@ class NewsController extends Controller
      */
     public function create()
     {
-        //
+        return view('pages.cms.faq.create');
     }
 
     /**
@@ -44,9 +44,9 @@ class NewsController extends Controller
      * @param  \App\Models\News  $news
      * @return \Illuminate\Http\Response
      */
-    public function show(News $news)
+    public function show($id)
     {
-        //
+        return view('pages.cms.news.show');
     }
 
     /**
@@ -55,9 +55,9 @@ class NewsController extends Controller
      * @param  \App\Models\News  $news
      * @return \Illuminate\Http\Response
      */
-    public function edit(News $news)
+    public function edit( $id)
     {
-        //
+        return view('pages.cms.news.edit');
     }
 
     /**
@@ -67,7 +67,7 @@ class NewsController extends Controller
      * @param  \App\Models\News  $news
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, News $news)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -78,7 +78,7 @@ class NewsController extends Controller
      * @param  \App\Models\News  $news
      * @return \Illuminate\Http\Response
      */
-    public function destroy(News $news)
+    public function destroy($id)
     {
         //
     }

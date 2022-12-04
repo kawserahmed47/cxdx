@@ -14,7 +14,7 @@ class FaqController extends Controller
      */
     public function index()
     {
-        //
+        return view('pages.cms.faq.index');
     }
 
     /**
@@ -24,7 +24,7 @@ class FaqController extends Controller
      */
     public function create()
     {
-        //
+        return view('pages.cms.faq.create');
     }
 
     /**
@@ -44,9 +44,9 @@ class FaqController extends Controller
      * @param  \App\Models\Faq  $faq
      * @return \Illuminate\Http\Response
      */
-    public function show(Faq $faq)
+    public function show($id)
     {
-        //
+        return view('pages.cms.faq.show');
     }
 
     /**
@@ -55,9 +55,9 @@ class FaqController extends Controller
      * @param  \App\Models\Faq  $faq
      * @return \Illuminate\Http\Response
      */
-    public function edit(Faq $faq)
+    public function edit($id)
     {
-        //
+        return view('pages.cms.faq.edit');
     }
 
     /**
@@ -67,7 +67,7 @@ class FaqController extends Controller
      * @param  \App\Models\Faq  $faq
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Faq $faq)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -78,7 +78,7 @@ class FaqController extends Controller
      * @param  \App\Models\Faq  $faq
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Faq $faq)
+    public function destroy($id)
     {
         //
     }

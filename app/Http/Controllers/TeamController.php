@@ -14,7 +14,7 @@ class TeamController extends Controller
      */
     public function index()
     {
-        //
+        return view('pages.cms.team.index');
     }
 
     /**
@@ -24,7 +24,7 @@ class TeamController extends Controller
      */
     public function create()
     {
-        //
+        return view('pages.cms.team.create');
     }
 
     /**
@@ -44,9 +44,9 @@ class TeamController extends Controller
      * @param  \App\Models\Team  $team
      * @return \Illuminate\Http\Response
      */
-    public function show(Team $team)
+    public function show($id)
     {
-        //
+        return view('pages.cms.team.show');
     }
 
     /**
@@ -55,9 +55,9 @@ class TeamController extends Controller
      * @param  \App\Models\Team  $team
      * @return \Illuminate\Http\Response
      */
-    public function edit(Team $team)
+    public function edit($id)
     {
-        //
+        return view('pages.cms.team.edit');
     }
 
     /**
@@ -67,7 +67,7 @@ class TeamController extends Controller
      * @param  \App\Models\Team  $team
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Team $team)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -78,7 +78,7 @@ class TeamController extends Controller
      * @param  \App\Models\Team  $team
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Team $team)
+    public function destroy($id)
     {
         //
     }

@@ -14,7 +14,7 @@ class TestimonialController extends Controller
      */
     public function index()
     {
-        //
+        return view('pages.cms.testimonial.index');
     }
 
     /**
@@ -24,7 +24,7 @@ class TestimonialController extends Controller
      */
     public function create()
     {
-        //
+        return view('pages.cms.testimonial.create');
     }
 
     /**
@@ -44,9 +44,9 @@ class TestimonialController extends Controller
      * @param  \App\Models\Testimonial  $testimonial
      * @return \Illuminate\Http\Response
      */
-    public function show(Testimonial $testimonial)
+    public function show($id)
     {
-        //
+        return view('pages.cms.testimonial.show');
     }
 
     /**
@@ -55,9 +55,9 @@ class TestimonialController extends Controller
      * @param  \App\Models\Testimonial  $testimonial
      * @return \Illuminate\Http\Response
      */
-    public function edit(Testimonial $testimonial)
+    public function edit($id)
     {
-        //
+        return view('pages.cms.testimonial.edit');
     }
 
     /**
@@ -67,7 +67,7 @@ class TestimonialController extends Controller
      * @param  \App\Models\Testimonial  $testimonial
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Testimonial $testimonial)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -78,7 +78,7 @@ class TestimonialController extends Controller
      * @param  \App\Models\Testimonial  $testimonial
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Testimonial $testimonial)
+    public function destroy($id)
     {
         //
     }

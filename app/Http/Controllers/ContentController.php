@@ -14,7 +14,7 @@ class ContentController extends Controller
      */
     public function index()
     {
-        //
+        return view('pages.cms.content.index');
     }
 
     /**
@@ -24,7 +24,7 @@ class ContentController extends Controller
      */
     public function create()
     {
-        //
+        return view('pages.cms.content.create');
     }
 
     /**
@@ -44,9 +44,9 @@ class ContentController extends Controller
      * @param  \App\Models\Content  $content
      * @return \Illuminate\Http\Response
      */
-    public function show(Content $content)
+    public function show($id)
     {
-        //
+        return view('pages.cms.content.show');
     }
 
     /**
@@ -55,9 +55,10 @@ class ContentController extends Controller
      * @param  \App\Models\Content  $content
      * @return \Illuminate\Http\Response
      */
-    public function edit(Content $content)
+    public function edit($id)
     {
-        //
+        return view('pages.cms.content.edit');
+
     }
 
     /**
@@ -67,7 +68,7 @@ class ContentController extends Controller
      * @param  \App\Models\Content  $content
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Content $content)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -78,7 +79,7 @@ class ContentController extends Controller
      * @param  \App\Models\Content  $content
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Content $content)
+    public function destroy($id)
     {
         //
     }
